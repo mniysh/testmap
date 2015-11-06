@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.admin.testmap.ShowMapActivity"
+    tools:showIn="@layout/activity_show_map">
+
+    <com.baidu.mapapi.map.MapView
+
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+
+    <LinearLayout
+        android:id="@+id/ll_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/but_putong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="普通" />
+
+        <Button
+            android:id="@+id/but_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="卫星" />
+
+        <Button
+            android:id="@+id/but_traffic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="交通" />
+
+        <Button
+            android:id="@+id/but_hot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="热力" />
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_below="@+id/ll_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/but_marker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marker" />
+
+        <Button
+            android:id="@+id/but_tuozhuai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="拖拽" />
+
+        <!--<Button-->
+            <!--android:id="@+id/but_traffic"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="交通" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/but_hot"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="热力" />-->
+
+    </LinearLayout>
+
+</RelativeLayout>
